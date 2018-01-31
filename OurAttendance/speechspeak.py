@@ -33,7 +33,7 @@ while(True):
         t=0
         try:
                 questionlist=["what is datascience","define dataScience","define dataanalysis","elaborate data science","data science","tell me about datascience","data","science","data science"]
-                bringon=["graph","graphs","show me the data science graph","show me the example of data science","show the graphs","graphs in the datascience","graphs of the datascience","graphs","graphs of the data","big data graph","data science graph"]
+                bringon=["graph","graphs","show me the data science graph","show me the example of data science","example","show the graphs","graphs in the datascience","graphs of the datascience","graphs","graphs of the data","big data graph","data science graph"]
                 exiton=["terminate","exit","stop listening","graph"]
                 talklist=["tell me about yourself","who are you","who r u","tell me something about yourself","introduce","introduce yourself","intro","give intro"]
                 text1 = r.recognize_google(audio)
@@ -81,6 +81,7 @@ while(True):
                                 os.system("SpeechTask3.vbs")
                                 os.system("chartopen.html")
                                 break
+                        break
                 except sr.UnknownValueError:
                                         print("Google Speech Recognition could not understand audio")
                              
