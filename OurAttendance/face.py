@@ -24,10 +24,10 @@ def message(name,reg):
 		    print(row[0])
 		db.commit()
 		db.close()
-		account_sid = "AC5adda6db593a0f369a427283c8436959"
-		auth_token = "fc647306d1cd37646ac0f1f23c55e612"
+		account_sid = "insert"
+		auth_token = "insert"
 		client = Client(account_sid, auth_token)
-		client.api.account.messages.create(to="+13153538299",from_="+13153229683",body="Attendance for the today is marked.")
+		client.api.account.messages.create(to="+insert",from_="+insert",body="Attendance for the today is marked.")
 		smsmsg="Attendance Acknowlegement was sent successfully to "+str(name)
 		f=open("SMSSpeech.vbs","w+")
 		k="Dim sapi \nSet sapi=Createobject(\"sapi.spvoice\") \nsapi.Speak "+'"'+smsmsg+'"'
