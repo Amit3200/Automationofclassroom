@@ -66,12 +66,12 @@ while(True):
                                 f.close()
                                 os.system("msg2.vbs")
                                 print("Inside Login Loop")
-                                account_sid = "AC5adda6db593a0f369a427283c8436959"
-                                auth_token = "fc647306d1cd37646ac0f1f23c55e612"
+                                account_sid = "insert"
+                                auth_token = "insert"
                                 client = Client(account_sid, auth_token)
                                 client.api.account.messages.create(
-                                to="+13153538299",
-                                from_="+13153229683",
+                                to="+insert",
+                                from_="+insert",
                                 body=text5)
                                 print("Message Sent")
                                 smsmsg="Notes Sent Successfully"
